@@ -4,7 +4,7 @@
 	<groupId>com.leilove321</groupId>
 	<artifactId>north-adapter</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<name>project Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	<dependencies>
@@ -37,6 +37,17 @@
 			<version>${logback.version}</version>
 			<scope>runtime</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>org.jacorb</groupId>
+			<artifactId>jacorb</artifactId>
+			<version>${jacorb.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.jacorb</groupId>
+			<artifactId>jacorb-services</artifactId>
+			<version>${jacorb.version}</version>
+		</dependency>
 	</dependencies>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -45,9 +56,9 @@
 		<slf4j.version>1.7.2</slf4j.version>
 		<common-dbutils.version>1.5</common-dbutils.version>
 		<mysql.version>5.1.23</mysql.version>
+		<jacorb.version>3.2</jacorb.version>
 	</properties>
 	<build>
-		<finalName>north-adapter</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.mortbay.jetty</groupId>
@@ -96,5 +107,5 @@
 			</plugin>
 		</plugins>
 	</build>
-	
+
 </project>
